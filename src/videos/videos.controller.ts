@@ -1,9 +1,10 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
 import { VideosService } from './videos.service';
 import { CreateVideoDto } from './dto/create-video.dto';
 import { UpdateVideoDto } from './dto/update-video.dto';
 import axios from "axios";
 import { google } from 'googleapis';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 const youtube = google.youtube({
   version: "v3",
@@ -23,7 +24,7 @@ export class VideosController {
   findAll() {
     return this.videosService.findAll();
   }
-
+  @UseGuards(JwtAuthGuard)
   @Get(':searchQuery')
   async findOne(@Param('searchQuery') searchQuery: string) {
     //return this.videosService.findOne(+id);

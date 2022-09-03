@@ -14,4 +14,4 @@ export class Video {
   
 }
 
-export const Videochema = SchemaFactory.createForClass(Video);
+export const VideoSchema = SchemaFactory.createForClass(Video);
