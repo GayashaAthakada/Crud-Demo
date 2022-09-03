@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "1edba574-6032-4e05-911c-c3d6450854e5",
+		"name": "rest API -postman codes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22879120"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/videos/srilanka",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"\",\n    \"password\": \"\",\n    \"playlistid\" : \"\",\n     \"videoid\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/videos/srilanka",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos",
+						"srilanka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/videos/playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/videos/playlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"videos",
+						"playlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/playlistitem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/playlistitem/[Enter Play List ID]",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlistitem",
+						"[Enter Play List ID]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/playlistitem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"\",\n    \"password\": \"\",\n    \"playlistid\": \"\",\n     \"videoid\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/playlistitem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlistitem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/playlistitem/[Enter Play List  Item ID]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/playlistitem/[Enter Play List  Item ID]",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlistitem",
+						"[Enter Play List  Item ID]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/playlistitem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usename\": \"\",\n    \"password\": \"\",\n    \"playlistid\": \"\",\n    \"playlistitem\": \"\",\n    \"videoid\": \"\",\n    \"position\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/playlistitem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlistitem"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
